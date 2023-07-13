@@ -1,0 +1,33 @@
+body{
+    background-color: black;
+    margin:20px;
+}
+
+.container{
+    max-width: 800px;
+    margin:auto;
+    background-color: antiquewhite;
+    border: 5px solid aliceblue;
+}
+
+img{
+    width:100%;
+}
+.imgs{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+}
+
+.fade-in{
+    animation: fade-in 0.6s ease-in forwards;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
